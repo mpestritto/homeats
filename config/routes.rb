@@ -1,5 +1,5 @@
 Homeeat::Application.routes.draw do
-  
+  resources:chefs, :only => [:index]
   
   
   # The priority is based upon order of creation:
@@ -14,7 +14,7 @@ Homeeat::Application.routes.draw do
   # This route can be invoked with purchase_url(:id => product.id)
 
   # Sample resource route (maps HTTP verbs to controller actions automatically):
-     resources :products
+   #  resources :products
 
   # Sample resource route with options:
   #   resources :products do
