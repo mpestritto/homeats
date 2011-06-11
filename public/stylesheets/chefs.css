@@ -1,0 +1,20 @@
+.chef_profile_photo {
+    display:inline-block;
+    float:left;
+    height:300px;
+    margin-top: 6px;
+    width : 300px;
+}
+
+div.chef_details {
+    float : left;
+}
+
+div.chef_name {
+    color:red;
+    font-size:24px;
+}
+
+div.grid_menu {
+    float : left;
+}
