@@ -1,1 +1,12 @@
-<h1>this is  my home page.</h1>
+<div class="grid12_4 home_neighborhood">
+<div id="logo">Eat A Home Cooked Meal Tonight</div>
+<div id="txt_borough">Select a borough:</div>
+<div id="ddl_borough"><%= select_tag :locations, options_for_select(@locations) %></div>
+<div id="txt_borough">Select a borough:</div>
+
+</div>
+<div class="grid12_8 home_map">
+<%= image_tag "home-map.jpg", :class=>'map_image' %>
+</div>
+
+<div class="clear"></div>

@@ -1,0 +1,14 @@
+body{
+  background-image: url(/images/bg-slice.jpg);
+  margin-top: 2px;
+}
+
+#logo{
+  color: #CC3333;
+  font-size: 24px;
+  padding: 20px;
+}
+
+.map_image{
+  margin-top: 5px;
+}

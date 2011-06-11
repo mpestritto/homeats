@@ -1,3 +1,8 @@
-.headerimage {
-  background-color: orange;
+.header_login {
+  color: white;
+  height: 23px;
+}
+
+.header_whitespace{
+  height: 71px;
 }
