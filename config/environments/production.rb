@@ -47,5 +47,16 @@ Homeeat::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
   
-  config.action_mailer.default_url_options = { :host => 'saucychefs.heroku.com' }
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.default_url_options = { :host => '##YOUR_PROJECTNAME##.heroku.com' }
+  ActionMailer::Base.smtp_settings = {
+    :address    => "smtp.google.com",
+    :port       => 25,
+    :user_name  => 'noreply@saucychefs.com',
+    :password   => 'n9AkelACa',
+    :domain     => 'saucychefs.com',
+    :authentication  => :plain
+  }
+  
 end
