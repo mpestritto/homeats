@@ -19,6 +19,14 @@
   text-decoration: none;
 }
 
+.header_register_btn{
+  float: left;
+  margin-left: 550px;
+  margin-top: -27px;
+  position: absolute;
+  z-index: 1;
+}
+
 #div_flash{
   font-size: 12px;
   margin-right: 50px;

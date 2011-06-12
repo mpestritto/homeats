@@ -1,11 +1,14 @@
 <div class="grid12_4 home_neighborhood">
-<div id="logo">Eat A Home Cooked Meal Tonight</div>
+<% if ! user_signed_in? %>
+<%= link_to ( image_tag "register-btn.png" , :class=>'header_register_btn' ) , new_user_registration_path %>
+<% end %>
+<div id="logo">Local Chefs Cook In Your Home</div>
 <div id="txt_borough">Choose your borough:</div>
 <div id="ddl_borough"><%= select_tag :locations, options_for_select(@locations) %></div>
-<%= image_tag "home-submit.jpg" , :class=>'homesubmit' %>
+<%= link_to ( image_tag "home-submit.jpg" , :class=>'homesubmit' ), listings_path %>
 </div>
 <div class="grid12_8 home_map">
-<%= image_tag "home-map.jpg", :class=>'map_image' %>
+<%= image_tag "home-map-lowrez.jpg", :class=>'map_image' %>
 </div>
 <div class="clear"></div>
 
@@ -13,6 +16,6 @@
   <%= image_tag "dishes.jpg", :class=>'img_dishes' %>
 </div>
 <div class="grid12_9">
-  <%= link_to ( image_tag "chefs.jpg", :class=>'img_chefs') , :controller => :chefs, :action=>:index %>
+  <%= link_to ( image_tag "chefs.jpg", :class=>'img_chefs') , chefs_path  %>
 </div>
 <div class="clear"></div>

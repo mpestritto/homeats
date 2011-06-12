@@ -1,8 +1,11 @@
 Homeeat::Application.routes.draw do
   devise_for :users
 
-  resources:chefs, :only => [:index]
+  resources:chefs, :only => [ :index ]
   
+  resources:listings, :only => [ :index ]
+  
+  resources :home, :only => [ :index ]
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
