@@ -6,3 +6,8 @@
 .header_whitespace{
   height: 71px;
 }
+
+.header_logo{
+  margin-top: -15px;
+  margin-left: 30px;
+}
