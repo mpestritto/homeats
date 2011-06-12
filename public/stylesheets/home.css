@@ -40,6 +40,14 @@
   margin-top: 5px;
 }
 
+.header_register_btn{
+  float: left;
+  margin-left: 625px;
+  margin-top: -27px;
+  position: absolute;
+  z-index: 1;
+}
+
 #ddl_borough{
   margin: 5px;
   text-align: right;
