@@ -2,12 +2,40 @@
     display:inline-block;
     float:left;
     height:300px;
-    margin-top: 6px;
+    width : 300px;
+}
+
+.chef_photo {
+    display:inline-block;
+    float:left;
+    height:300px;
     width : 300px;
 }
 
 div.chef_details {
     float : left;
+    background:white;
+    padding-left:10px;
+}
+
+
+
+div.chef_data_outer {
+    float : left;
+    background:url(/images/stripe-pattern.gif);
+    background-color:white;
+
+    /*
+    border-width: 4 4 4 4;
+    -webkit-border-image: url(/images/stripe-pattern.gif) 4 4 4 4 repeat repeat;
+    -moz-border-image: url(/images/stripe-pattern.gif) 4 4 4 4 repeat repeat;
+    */
+    padding:8px;
+}
+div.chef_data_inner {
+    background-color:white;
+    float: left;
+    width: 100%;
 }
 
 div.chef_name {
@@ -17,4 +45,51 @@ div.chef_name {
 
 div.grid_menu {
     float : left;
+}
+
+div.menu_item {
+    width : 475px;
+    height:125px;
+    margin:0px;
+    padding:0px;
+    float:left;
+    display:inline;;
+}
+
+div.menu_item_photo {
+    width : 50%;
+    height : 100%;
+}
+
+
+div.review_item {
+    width : 475px;
+    height:125px;
+    margin:0px;
+    padding:0px;
+    float:left;
+    display:inline;;
+}
+
+div.review_item_photo {
+    width : 50%;
+    height : 100%;
+}
+
+div.review_header {
+    color :red;
+    font-size:24px;
+    padding:20px;
+    margin-left:550px;
+}
+div.menu_header {
+    color :red;
+    font-size:24px;
+    padding:20px;
+    float : left;
+    margin-left:170px;
+}
+
+div.menu_item_feedback {
+    padding-bottom:5px;
 }

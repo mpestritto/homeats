@@ -1,26 +1,32 @@
-<div class="grid12_4">
-      <%= image_tag "chef-profile.jpg", :class=>'chef_profile_photo' %>
-  </div>
-  <div class="grid12_4 chef_details">
-            <div class="chef_name">Name     : Chef Awesome</div>
-            <div>Location : Hells Kitchen, NY</div>
-            <div>Best dish : Chicken over rice</div>
-            <div>Interesting fact : Loves skiing</div>
+<div class="grid12_12 chef_data_outer">
+  <div class="chef_data_inner" >
+      <div class="chef_photo">
+              <%= image_tag "chef-profile.jpg", :class=>'chef_profile_photo' %>
+          </div>
+          <div class="chef_details">
+                <div class="chef_name">Name     : Chef Matt</div>
+                <div>Location : Brooklyn, NY</div>
+                <div>Interesting fact : He once rode a horse through a hoop of fire</div>
+                <div>Specialities : <span>Italian</span>, <span>Sauces</span>, <span>American</span> </div>
+                <div>Pricing :</div>
+        </div>
+   </div>
+ </div>
+    <div class="clear">
     </div>
-    <div class="clear"></div>
-    <div class="grid12_6 chef_menu">
-        <div>Menu</div>
-        <div class="menu1">
-              abc
+    <div class="chef_menu_header">
+        <div class="menu_header">Menu</div>
+        <div  class="review_header">User Reviews</div>
+     </div>
+     <div class="chef_menu">
+        <div class="menu_item_feedback">
+            <%= image_tag "chef-page-bottom.jpg", :class=>'chef_page_bottom' %>
         </div>
-        <div class="menu1">
-                 def
-              </div>
+       <div class="menu_item_feedback">
+            <%= image_tag "chef-page-bottom.jpg", :class=>'chef_page_bottom' %>
         </div>
-        <div class="grid12_6 chef_reviews">
-            <div>Reviews</div>
-           <div class="menu1">
-              abc
+       <div class="menu_item_feedback">
+            <%= image_tag "chef-page-bottom.jpg", :class=>'chef_page_bottom' %>
         </div>
     </div>
 
