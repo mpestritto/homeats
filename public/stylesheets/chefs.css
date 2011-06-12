@@ -23,13 +23,12 @@ div.chef_details {
     font-weight:bold;
     color :#5a5a5a;
     background-color:#eeeeee;
-    width : 100px;
+    width : 120px;
     height : 20px;
     float : left;
     position: relative;
     text-align: right;
     margin-right : 10px;
-
 }
 div.check_details_ind_feat_block {
     float : left;
@@ -39,15 +38,13 @@ div.chef_det_ind_item
     padding : 1px;
 }
 .chef_det_ind_feat_val {
-    float : left;
-    font-weight:bold;
     color :yellow;
-    width : 100px;
+    font-weight:bold;
     height : 20px;
-    float : left;
     position: relative;
+    margin-left : 141px;
     text-align: right;
-    margin-left : 33px;
+    width : 100px;
 }
 
 .chef_det_ind_features {
