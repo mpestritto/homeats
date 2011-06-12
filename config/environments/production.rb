@@ -51,7 +51,7 @@ Homeeat::Application.configure do
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.default_url_options = { :host => '##YOUR_PROJECTNAME##.heroku.com' }
   ActionMailer::Base.smtp_settings = {
-    :address    => "smtp.google.com",
+    :address    => "smtp.gmail.com",
     :port       => 25,
     :user_name  => 'noreply@saucychefs.com',
     :password   => 'n9AkelACa',
