@@ -1,6 +1,7 @@
 .header_login {
   color: white;
   height: 23px;
+  text-align: right;
 }
 
 .header_whitespace{
@@ -8,6 +9,27 @@
 }
 
 .header_logo{
+  float: left;
   margin-top: -15px;
   margin-left: 30px;
 }
+
+.header_login a {
+  color: white;;
+  text-decoration: none;
+}
+
+#div_flash{
+  font-size: 12px;
+  margin-right: 50px;
+  padding-left: 500px;
+  padding-top: 10px;
+  text-align: right;
+}
+#alert{
+ color: red; 
+}
+#notice{
+  color: green;  
+}
+

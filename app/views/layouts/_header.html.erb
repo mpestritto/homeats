@@ -1,4 +1,16 @@
-<div class="grid12_3 prefix_9 header_login">Register | Login</div> 
+<div class="grid12_6 prefix_6 header_login">
+  <% if user_signed_in? %>
+    Signed in as <%= current_user.email %>. Not you?
+    <%= link_to "Logout", destroy_user_session_path %>
+  <% else %>
+    <%= link_to "Login", new_user_session_path  %> | <%= link_to "Register", new_user_registration_path %>
+  <% end %>
+</div> 
 <div class="clear"></div>
-<div class="header_whitespace"><%= image_tag "logo.png" , :class=>'header_logo' %></div>
+<div class="header_whitespace"><%= image_tag "logo.png" , :class=>'header_logo' %>
+<div id="div_flash">
+  <div id="notice"><%= notice %></div>
+  <div id="alert"><%= alert %></div>
+</div>
+</div>
 <div class="clear"></div>

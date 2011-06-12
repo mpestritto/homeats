@@ -8,6 +8,11 @@ gem 'rails', '3.0.7'
 gem 'sqlite3'
 
 gem 'jquery-rails'
+
+gem 'devise'
+
+gem 'omniauth'
+
 # Ue unicorn as the web server
 # gem 'unicorn'
 
