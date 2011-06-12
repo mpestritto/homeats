@@ -7,3 +7,21 @@ body{
   font-family: m54 ;
   src: url( /lifestyleroundedm54.ttf ) format("truetype");
 }
+
+.auth_form {
+  background-color:white;
+  padding-left: 50px;
+  width: 400px;
+  border-color: black;
+  border-width: 1px;
+  border-style: solid;
+  height: 308px;
+}
+
+.error_explanation, h2{
+  font-size: 14px;
+}
+.error_explanation, li{
+  font-size: 12px;
+}
+
