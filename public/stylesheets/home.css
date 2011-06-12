@@ -1,3 +1,8 @@
+@font-face {  
+  font-family: m54 ;  
+  src: url( /lifestyleroundedm54.ttf ) format("truetype");  
+} 
+
 .home_neighborhood{
   background-color: white;
   border-color: #CCCCCC;
@@ -34,18 +39,29 @@
   margin-left: 10px;
 }
 
+.map_image{
+  margin-top: 5px;
+}
+
+#ddl_borough{
+  margin: 5px;
+  text-align: right;
+  width: 260px;
+}
+
+#logo{
+  color: #CC3333;
+  font-size: 22px;
+  font-family: m54;
+  padding: 20px;
+}
+
 #txt_borough{
   margin: 5px;
   margin-top: 15px;
   font-size: 16px;
   font-style: italic;
   font-weight: bold;
-  text-align: right;
-  width: 260px;
-}
-
-#ddl_borough{
-  margin: 5px;
   text-align: right;
   width: 260px;
 }
