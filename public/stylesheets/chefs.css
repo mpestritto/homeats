@@ -15,9 +15,12 @@
 div.chef_details {
     float : left;
     background:white;
-    padding-left:10px;
+    padding-left:20px;
+    padding-top: 10px;
 }
-
+span.tagH {
+    color :blue;
+}
 
 
 div.chef_data_outer {
@@ -41,6 +44,9 @@ div.chef_data_inner {
 div.chef_name {
     color:red;
     font-size:24px;
+    font-family:m54;
+    margin-left:-5px;
+
 }
 
 div.grid_menu {

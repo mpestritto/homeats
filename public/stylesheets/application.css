@@ -2,3 +2,8 @@ body{
   background-image: url(/images/bg-slice.jpg);
   margin-top: 2px;
 }
+
+@font-face {
+  font-family: m54 ;
+  src: url( /lifestyleroundedm54.ttf ) format("truetype");
+}
