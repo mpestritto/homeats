@@ -1,0 +1,28 @@
+.listings_outer{
+    background:url(/images/stripe-pattern.gif);
+    background-color:white;
+    padding: 6px;
+}
+
+.listings_inner{
+  width: 100%;
+  background-color:white;
+}
+
+.listing_results {
+  padding-top: 5px;
+  padding-bottom: 3px;
+  width: 722px;
+}
+
+
+#listing_menu_pic_a{
+  background-image :url(/images/search-menu.jpg);
+  display: inline;
+  float: left;
+  height: 618px;
+  width:196px;
+}
+#listing_menu_pic_a:hover{
+  background-position: -196px 0px;
+}
