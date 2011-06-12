@@ -1,3 +1,4 @@
+
 <div class="grid12_6 prefix_6 header_login">
   <% if user_signed_in? %>
     Signed in as <%= current_user.email %>. Not you?
@@ -5,7 +6,8 @@
   <% else %>
     <%= link_to "Login", new_user_session_path  %> | <%= link_to "Register", new_user_registration_path %>
   <% end %>
-</div> 
+  <span>| <a href="mailto:team@saucychefs.com">Contact us</a></span>
+</div>
 <div class="clear"></div>
 <div class="header_whitespace"><%= image_tag "logo.png" , :class=>'header_logo' %>
 <div id="div_flash">
