@@ -18,6 +18,41 @@ div.chef_details {
     padding-left:20px;
     padding-top: 10px;
 }
+
+.chef_det_ind {
+    font-weight:bold;
+    color :green;
+    background-color:#eeeeee;
+    width : 100px;
+    height : 20px;
+    float : left;
+    position: relative;
+    text-align: right;
+    margin-right : 10px;
+
+}
+div.check_details_ind_feat_block {
+    float : left;
+}
+div.chef_det_ind_item
+{
+    padding : 1px;
+}
+.chef_det_ind_feat_val {
+    float : left;
+    font-weight:bold;
+    color :yellow;
+    width : 100px;
+    height : 20px;
+    float : left;
+    position: relative;
+    text-align: right;
+    margin-left : 33px;
+}
+
+.chef_det_ind_features {
+    margin-left : 10px;
+}
 span.tagH {
     color :blue;
 }
