@@ -13,6 +13,12 @@ gem 'devise'
 
 gem 'omniauth'
 
+gem 'rake', '0.9.2'
+
+#gem 'rake', '~> 0.8.7'
+
+gem 'bundler'
+
 # Ue unicorn as the web server
 # gem 'unicorn'
 
