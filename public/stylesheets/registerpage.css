@@ -8,7 +8,8 @@ div.register_block {
 div.rblock_back {
      background-repeat:no-repeat;
      background-color:#f6f5e8 ;
-     height : 100px;
+     height : 800px;
+     position: absolute;
      width: 100%;
      z-index: 1;
 
@@ -28,4 +29,15 @@ div.register_block_4 {
 }
 div.register_block_5 {
      background-image:url(/images/registerpage/backgroundslices/background-slice_05.jpg);
+}
+
+.reg_page_elements {
+    z-index: 2;
+    position: absolute;
+}
+
+.reg_logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto
 }
