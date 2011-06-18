@@ -1,0 +1,31 @@
+
+div.register_block {
+    background-color:#f6f5e8;
+    width :960px;
+    margin: 0%;
+    padding: 0;
+}
+div.rblock_back {
+     background-repeat:no-repeat;
+     background-color:#f6f5e8 ;
+     height : 100px;
+     width: 100%;
+     z-index: 1;
+
+}
+div.register_block_1 {
+     background-image:url(/images/registerpage/backgroundslices/background-slice_01.jpg);
+}
+
+div.register_block_2 {
+     background-image:url(/images/registerpage/backgroundslices/background-slice_02.jpg);
+}
+div.register_block_3 {
+     background-image:url(/images/registerpage/backgroundslices/background-slice_03.jpg);
+}
+div.register_block_4 {
+     background-image:url(/images/registerpage/backgroundslices/background-slice_04.jpg);
+}
+div.register_block_5 {
+     background-image:url(/images/registerpage/backgroundslices/background-slice_05.jpg);
+}

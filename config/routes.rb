@@ -2,6 +2,7 @@ Homeeat::Application.routes.draw do
   devise_for :users
 
   resources:chefs, :only => [ :index ]
+  resources:register, :only => [ :index ]
   
   resources:listings, :only => [ :index ]
   
