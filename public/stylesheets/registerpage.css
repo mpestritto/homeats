@@ -36,8 +36,22 @@ div.register_block_5 {
     position: absolute;
 }
 
-.reg_logo {
+DIV.reg_logo {
     display: block;
     margin-left: auto;
     margin-right: auto
+}
+
+DIV.reg_site_logo {
+    margin-left: 35%;
+    float: none;
+}
+
+DIV.reg_site_block {
+    margin-left: 35%;
+    margin-top: 10%;
+}
+
+IMG.reg_btn {
+    margin-left: 2%;
 }
