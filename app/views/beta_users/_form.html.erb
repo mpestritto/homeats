@@ -1,21 +1,17 @@
 <%= form_for(@beta_user) do |f| %>
-  <% if @beta_user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@beta_user.errors.count, "error") %> prohibited this beta_user from being saved:</h2>
+  <div class="register_block"></div>
+        <div class="register_block_1 rblock_back"></div>
+          <!--<div class="register_block_2 rblock_back"></div>
+          <div class="register_block_3 rblock_back"></div>
+          <div class="register_block_4 rblock_back"></div>
+          <div class="register_block_5 rblock_back"></div> -->
 
-      <ul>
-      <% @beta_user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.text_field :email %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
+          <div class="reg_site_logo">
+             <%= link_to ( image_tag "RegisterPage/logo.png" , :class=>'reg_logo reg_page_elements' ), listings_path %>
+          </div>
+           <div class="reg_site_block reg_page_elements">
+                    <%= f.text_field :email, :class=>'reg_email_box' %>
+                    <%= link_to image_tag("RegisterPage/sign-up-btn.png"), {:controller => 'beta_users', :action => "create" }, :class=>'reg_btn' %>
+           </div>
+   </div>
 <% end %>

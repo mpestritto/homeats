@@ -4,16 +4,19 @@ div.register_block {
     width :960px;
     margin: 0%;
     padding: 0;
+    border: 1px red solid;
 }
+
 div.rblock_back {
      background-repeat:no-repeat;
      background-color:#f6f5e8 ;
      height : 800px;
      position: absolute;
      width: 100%;
-     z-index: 1;
+     z-index: 2;
 
 }
+
 div.register_block_1 {
      background-image:url(/images/registerpage/backgroundslices/background-slice_01.jpg);
 }
@@ -32,7 +35,7 @@ div.register_block_5 {
 }
 
 .reg_page_elements {
-    z-index: 2;
+    z-index: 5;
     position: absolute;
 }
 
@@ -48,10 +51,22 @@ DIV.reg_site_logo {
 }
 
 DIV.reg_site_block {
-    margin-left: 35%;
-    margin-top: 10%;
+    margin-left: 300px;
+    margin-top: 150px;;
 }
 
-IMG.reg_btn {
-    margin-left: 2%;
+.reg_btn {
+            border: none;
+            display: inline;
+            float: none;
 }
+
+.reg_email_box {
+    display: block;
+    float: left;
+    height: 40px;
+    margin-right: 25px;
+    margin-top: 13px;
+    width: 400px;
+}
+
