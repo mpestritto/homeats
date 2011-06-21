@@ -1,10 +1,10 @@
 
 div.register_block {
     background-color:#f6f5e8;
-    width :960px;
-    margin: 0%;
+    width :760px;
+    margin-left: 0%;
     padding: 0;
-    border: 1px red solid;
+
 }
 
 div.rblock_back {
@@ -51,7 +51,7 @@ DIV.reg_site_logo {
 }
 
 DIV.reg_site_block {
-    margin-left: 300px;
+    margin-left: 330px;
     margin-top: 150px;;
 }
 
@@ -64,9 +64,49 @@ DIV.reg_site_block {
 .reg_email_box {
     display: block;
     float: left;
-    height: 40px;
+    height: 26px;
     margin-right: 25px;
-    margin-top: 13px;
+    margin-top: 10px;
     width: 400px;
+    /*below two are used to get rounded corners */
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+
 }
 
+div.reg_private_beta_txt {
+         display: block;
+         margin-left: 460px;
+         margin-top: 220px;
+
+}
+
+div.reg_txt {
+    margin-top: 300px;
+    margin-left: 45px;
+
+}
+
+span.reg_txt1 {
+    padding-left: 50px;
+    display: inline;
+    padding-right: 65px;
+
+}
+
+div.reg_pic {
+    margin-top: 430px;
+    margin-left: 15px;
+}
+
+span.reg_pic1 {
+    padding-left: 35px;
+    display: inline;
+
+}
+
+div.reg_string {
+    margin-top: 440px;
+    margin-left: 220px;
+
+}

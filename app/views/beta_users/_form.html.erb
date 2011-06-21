@@ -1,5 +1,6 @@
-<%= form_for(@beta_user) do |f| %>
-  <div class="register_block"></div>
+
+<div class="register_block"></div>
+  <%= form_for(@beta_user) do |f| %>
         <div class="register_block_1 rblock_back"></div>
           <!--<div class="register_block_2 rblock_back"></div>
           <div class="register_block_3 rblock_back"></div>
@@ -13,5 +14,24 @@
                     <%= f.text_field :email, :class=>'reg_email_box' %>
                     <%= link_to image_tag("RegisterPage/sign-up-btn.png"), {:controller => 'beta_users', :action => "create" }, :class=>'reg_btn' %>
            </div>
-   </div>
-<% end %>
+
+           <div class="reg_private_beta_txt reg_page_elements">
+                Sign up for private beta
+           </div>
+           <div class="reg_txt reg_page_elements">
+                   <span class="reg_txt1"><%= link_to image_tag("RegisterPage/txt1.png") %></span>
+                   <span class="reg_txt1"><%= link_to image_tag("RegisterPage/txt2.png") %></span>
+                   <span class="reg_txt1"><%= link_to image_tag("RegisterPage/txt2.png") %></span>
+           </div>
+            <div class="reg_pic reg_page_elements">
+                   <span class="reg_pic1"><%= link_to image_tag("RegisterPage/pic1.png") %></span>
+                   <span class="reg_pic1"><%= link_to image_tag("RegisterPage/pic2.png") %></span>
+                   <span class="reg_pic1"><%= link_to image_tag("RegisterPage/pic3.png") %></span>
+            </div>
+            <div class="reg_string reg_page_elements">
+                       <%= link_to image_tag("RegisterPage/string.png") %>
+            </div>
+
+    <% end %>
+
+</div>
