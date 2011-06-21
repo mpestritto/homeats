@@ -1,9 +1,10 @@
 Homeeat::Application.routes.draw do
+  resources :beta_users
+
   devise_for :users
 
   resources:chefs, :only => [ :index ]
-  resources:betauser, :only => [ :index ]
-  
+
   resources:listings, :only => [ :index ]
   
   resources :home, :only => [ :index ]
