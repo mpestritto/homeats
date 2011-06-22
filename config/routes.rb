@@ -1,5 +1,5 @@
 Homeeat::Application.routes.draw do
-  resources :beta_users
+  resources :beta_users, :only => [ :new, :create ]
 
   devise_for :users
 

@@ -1,6 +1,8 @@
 class BetaUsersController < ApplicationController
   # GET /beta_users
   # GET /beta_users.xml
+=begin
+
   def index
     @beta_users = BetaUser.all
 
@@ -20,6 +22,7 @@ class BetaUsersController < ApplicationController
       format.xml  { render :xml => @beta_user }
     end
   end
+=end
 
   # GET /beta_users/new
   # GET /beta_users/new.xml
@@ -31,18 +34,21 @@ class BetaUsersController < ApplicationController
       format.xml  { render :xml => @beta_user }
     end
   end
+=begin
 
   # GET /beta_users/1/edit
   def edit
     @beta_user = BetaUser.find(params[:id])
   end
+=end
 
   # POST /beta_users
   # POST /beta_users.xml
   def create
     @beta_user = BetaUser.new(params[:beta_user])
 
-    respond_to do |format|
+  respond_to do |format|
+
       if @beta_user.save
         format.html { redirect_to(@beta_user, :notice => 'Beta user was successfully created.') }
         format.xml  { render :xml => @beta_user, :status => :created, :location => @beta_user }
@@ -51,8 +57,10 @@ class BetaUsersController < ApplicationController
         format.xml  { render :xml => @beta_user.errors, :status => :unprocessable_entity }
       end
     end
+
   end
 
+=begin
   # PUT /beta_users/1
   # PUT /beta_users/1.xml
   def update
@@ -80,4 +88,5 @@ class BetaUsersController < ApplicationController
       format.xml  { head :ok }
     end
   end
+=end
 end
