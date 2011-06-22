@@ -8,7 +8,9 @@ class BetaUsersController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.xml  { render :xml => @beta_users }
+      #format.xml  { render :xml => @beta_users }
+      format.xml  { head :ok }
+      #format.xml  { render :xml => @beta_user, :status => :created, :location => @beta_user }
     end
   end
 
@@ -45,20 +47,30 @@ class BetaUsersController < ApplicationController
   # POST /beta_users
   # POST /beta_users.xml
   def create
-    @beta_user = BetaUser.new(params[:beta_user])
+
+    #isValidEmail = params[:beta_user].match(BetaUsersHelper);
+
+    isValidEmail = true;
+    if (isValidEmail)
+      @beta_user = BetaUser.new(params[:beta_user])
+    end
 
   respond_to do |format|
-
-      if @beta_user.save
-        format.html { redirect_to(@beta_user, :notice => 'Beta user was successfully created.') }
-        format.xml  { render :xml => @beta_user, :status => :created, :location => @beta_user }
+      if (isValidEmail == false)
+        format.html { redirect_to "/beta_users/new", notice: 'Please enter valid email address' }
+        format.json { render json: @beta_user.errors, status: :unprocessable_entity }
+      elsif (@beta_user.save)
+        #format.html { render action: "new" }
+        format.html { redirect_to "/beta_users/new", notice: @beta_user.email << '  .Thanks for signing up.' }
+        format.json { render json: @beta_user, status: :created, location: @beta_user }
       else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @beta_user.errors, :status => :unprocessable_entity }
+        format.html { render action: "new" }
+        format.json { render json: @beta_user.errors, status: :unprocessable_entity }
       end
     end
 
   end
+
 
 =begin
   # PUT /beta_users/1
