@@ -15,7 +15,7 @@
 
            <div class="reg_site_block reg_page_elements">
                     <% email_css_class = @beta_user.errors.include?(:email) ? "reg_email_box" : "reg_email_box" %>  <!--avoid highlighting -->
-                    <%= f.text_field :email, :class=>email_css_class %>
+                    <%= f.text_field :email, :class=>"#{email_css_class}" %>
                     <%= image_submit_tag("BetauserSignup/sign-up-btn.png",  :class=>'reg_btn') %>
            </div>
 
