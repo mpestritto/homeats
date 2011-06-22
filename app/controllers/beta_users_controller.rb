@@ -48,18 +48,10 @@ class BetaUsersController < ApplicationController
   # POST /beta_users.xml
   def create
 
-    #isValidEmail = params[:beta_user].match(BetaUsersHelper);
-
-    isValidEmail = true;
-    if (isValidEmail)
-      @beta_user = BetaUser.new(params[:beta_user])
-    end
+    @beta_user = BetaUser.new(params[:beta_user])
 
   respond_to do |format|
-      if (isValidEmail == false)
-        format.html { redirect_to "/beta_users/new", notice: 'Please enter valid email address' }
-        format.json { render json: @beta_user.errors, status: :unprocessable_entity }
-      elsif (@beta_user.save)
+      if (@beta_user.save)
         #format.html { render action: "new" }
         format.html { redirect_to "/beta_users/new", notice: @beta_user.email << '  .Thanks for signing up.' }
         format.json { render json: @beta_user, status: :created, location: @beta_user }
