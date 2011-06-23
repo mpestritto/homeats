@@ -25,3 +25,6 @@ body{
   font-size: 12px;
 }
 
+#error_explanation{
+  text-align: center;
+}

@@ -1,115 +1,51 @@
-a img {
-   border: 0;
-}
-
-div.register_block {
-    background-color:#f6f5e8;
-    width :760px;
-    margin-left: 0%;
-    padding: 0;
-
-}
-
-div.rblock_back {
-     background-repeat:no-repeat;
-     background-color:#f6f5e8 ;
-     height : 800px;
-     position: absolute;
-     width: 100%;
-     z-index: 2;
-
-}
-
-div.register_block_1 {
-     background-image:url(/images/BetauserSignup/backgroundslices/background-slice_01.jpg);
-}
-
-div.register_block_2 {
-     background-image:url(/images/BetauserSignup/backgroundslices/background-slice_02.jpg);
-}
-div.register_block_3 {
-     background-image:url(/images/BetauserSignup/backgroundslices/background-slice_03.jpg);
-}
-div.register_block_4 {
-     background-image:url(/images/BetauserSignup/backgroundslices/background-slice_04.jpg);
-}
-div.register_block_5 {
-     background-image:url(/images/BetauserSignup/backgroundslices/background-slice_05.jpg);
-}
-
-.reg_page_elements {
-    z-index: 5;
-    position: absolute;
-}
-
-DIV.reg_logo {
-    display: block;
+.reg_site_logo {
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    text-align:center;
 }
 
-DIV.reg_site_logo {
-    margin-left: 35%;
-    float: none;
-}
-
-DIV.reg_site_block {
-    margin-left: 330px;
-    margin-top: 150px;;
-}
-
-.reg_btn {
-            border: none;
-            display: inline;
-            float: none;
+.reg_site_block {
+    margin-left: auto;
+    margin-top: auto;
 }
 
 .reg_email_box {
-    display: block;
     float: left;
     height: 26px;
+    padding-left: 10px;
+    margin-left: 270px;
     margin-right: 25px;
-    margin-top: 10px;
+    margin-top: 18px;
     width: 400px;
     /*below two are used to get rounded corners */
     -moz-border-radius: 15px;
     border-radius: 15px;
-
 }
 
-div.reg_private_beta_txt {
-         display: block;
-         margin-left: 460px;
-         margin-top: 220px;
-
+.reg_bg{
+  background-color:#f6f5e8 ;
 }
 
-div.reg_txt {
-    margin-top: 300px;
-    margin-left: 45px;
-
+.reg_private_beta_txt {
+    font-size: 16px;
+    text-align: center;
 }
 
-span.reg_txt1 {
-    padding-left: 50px;
-    display: inline;
-    padding-right: 65px;
-
+/* this is silly that all of these images aren't cut the same size...*/
+.reg_image_txt1{
+  text-align: center;
+}
+.reg_image_txt2{
+  padding-top: 10px;
+  text-align: center;
+}
+.reg_image_txt3{
+  padding-top: 10px;
+  text-align: center;
 }
 
-div.reg_pic {
-    margin-top: 430px;
-    margin-left: 15px;
-}
-
-span.reg_pic1 {
-    padding-left: 35px;
-    display: inline;
-
-}
-
-div.reg_string {
-    margin-top: 440px;
-    margin-left: 220px;
-
+.reg_top_graphic{
+  margin-left: 137px;
+  margin-top: -210px;
+  position: absolute;
 }

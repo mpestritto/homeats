@@ -1,14 +1,13 @@
 Homeeat::Application.routes.draw do
-  resources :beta_users, :only => [ :new, :create ]
-
+  root :to => "home#index"
+  
   devise_for :users
 
-  resources:chefs, :only => [ :index ]
-
-  resources:listings, :only => [ :index ]
-  
+  resources :chefs, :only => [ :index ]
+  resources :listings, :only => [ :index ]
   resources :home, :only => [ :index ]
-  
+  resources :beta_users, :only => [ :new, :create ]
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -58,7 +57,6 @@ Homeeat::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => "home#index"
 
   # See how all your routes lay out with "rake routes"
 
