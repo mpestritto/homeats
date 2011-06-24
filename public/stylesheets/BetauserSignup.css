@@ -24,6 +24,9 @@
 
 .reg_bg{
   background-color:#f6f5e8 ;
+  background-image:url(/images/BetauserSignup/backgroundslices/beta-bg.jpg);
+  z-index: -10;
+
 }
 
 .reg_private_beta_txt {
