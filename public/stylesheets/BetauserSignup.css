@@ -36,14 +36,15 @@
     text-align: center;
 }
 
-div.reg_f_d_e_block {
+div.reg_f_d_e_text_block {
     padding-left: 40px;
     padding-top: 75px;
 }
+
+
 /* this is silly that all of these images aren't cut the same size...*/
 .reg_image_txt1{
     padding-right: 85px;
-    padding-top: 10px;
     text-align: center;
 }
 .reg_image_txt2{
