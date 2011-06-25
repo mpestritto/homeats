@@ -1,5 +1,7 @@
 body{
-  background-image: url(/images/bg-slice.jpg);
+  background-color:#f6f5e8 ;
+  background-image:url(/images/BetauserSignup/backgroundslices/beta-bg.jpg);
+  z-index: -10;
   margin-top: 2px;
 }
 
