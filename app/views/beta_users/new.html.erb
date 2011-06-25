@@ -8,7 +8,7 @@
 <%= form_for(@beta_user) do |f| %>
 <div class="grid12_12 alpha omega reg_bg">
    <div class="reg_site_block">
-      <% email_css_class = @beta_user.errors.include?(:email) ? "reg_email_box" : "reg_email_box email_greyText" %>
+      <% email_css_class = @beta_user.errors.include?(:email) ? "reg_email_box blockquote" : "reg_email_box blockquote" %>
       <%= f.text_field :email, :class=>"#{email_css_class}" %>
       <%= image_submit_tag("BetauserSignup/sign-up-btn.png",  :class=>'reg_btn') %>
    </div>
