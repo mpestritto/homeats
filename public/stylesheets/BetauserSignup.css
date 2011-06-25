@@ -12,7 +12,7 @@
     float: left;
     height: 45px;
     padding-left: 10px;
-    margin-left: 270px;
+    margin-left: 275px;
     margin-right: 25px;
     margin-top: 11px;
     width: 400px;
@@ -29,27 +29,27 @@
 }
 
 .reg_private_beta_txt {
-    font-size: 20px;
+    color: #3A3A3A;
+    font-family: large;
+    margin-left: 400px;
+    padding-top: 10px;
     text-align: center;
-    margin-left: 390px;
-
 }
 
 div.reg_f_d_e_block {
-    padding-top: 75px;
     padding-left: 40px;
+    padding-top: 75px;
 }
 /* this is silly that all of these images aren't cut the same size...*/
 .reg_image_txt1{
-    padding-top: 10px;
     padding-right: 85px;
+    padding-top: 10px;
     text-align: center;
 }
 .reg_image_txt2{
-  padding-top: 10px;
   padding-right: 85px;
+  padding-top: 10px;
   text-align: center;
-
 }
 .reg_image_txt3{
   padding-top: 10px;
@@ -62,3 +62,8 @@ div.reg_f_d_e_block {
   position: absolute;
 }
 
+.email_greyText {
+    color: #CCCCCC;
+	font-style: italic;
+    font-size: 20px;
+}
