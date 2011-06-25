@@ -37,15 +37,19 @@
 
 div.reg_f_d_e_block {
     padding-top: 75px;
-    padding-left: 130px;
+    padding-left: 40px;
 }
 /* this is silly that all of these images aren't cut the same size...*/
 .reg_image_txt1{
-  text-align: center;
+    padding-top: 10px;
+    padding-right: 85px;
+    text-align: center;
 }
 .reg_image_txt2{
   padding-top: 10px;
+  padding-right: 85px;
   text-align: center;
+
 }
 .reg_image_txt3{
   padding-top: 10px;
