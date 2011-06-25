@@ -1,6 +1,5 @@
 .reg_site_logo {
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 140px;
     text-align:center;
 }
 
@@ -11,11 +10,11 @@
 
 .reg_email_box {
     float: left;
-    height: 26px;
+    height: 45px;
     padding-left: 10px;
     margin-left: 270px;
     margin-right: 25px;
-    margin-top: 18px;
+    margin-top: 11px;
     width: 400px;
     /*below two are used to get rounded corners */
     -moz-border-radius: 15px;
@@ -30,10 +29,16 @@
 }
 
 .reg_private_beta_txt {
-    font-size: 16px;
+    font-size: 20px;
     text-align: center;
+    margin-left: 390px;
+
 }
 
+div.reg_f_d_e_block {
+    padding-top: 75px;
+    padding-left: 130px;
+}
 /* this is silly that all of these images aren't cut the same size...*/
 .reg_image_txt1{
   text-align: center;
@@ -52,3 +57,4 @@
   margin-top: -210px;
   position: absolute;
 }
+
