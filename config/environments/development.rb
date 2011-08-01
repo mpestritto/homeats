@@ -15,7 +15,7 @@ Homeeat::Application.configure do
   config.action_controller.perform_caching = false
 
   # Don't care if the mailer can't send
-  config.action_mailer.raise_delivery_errors = false
+  #config.action_mailer.raise_delivery_errors = false
 
   # Print deprecation notices to the Rails logger
   config.active_support.deprecation = :log
@@ -23,6 +23,20 @@ Homeeat::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
   
+  config.action_mailer.delivery_method = :smtp
+  config.action_mailer.perform_deliveries = true
+  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.default :charset => "utf-8"
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+  ActionMailer::Base.smtp_settings = {
+    :address    => "smtp.gmail.com",
+    :port       => 587,
+    :user_name  => 'noreply@saucychefs.com',
+    :password   => 'n9AkelACa',
+    :domain     => 'localhost',
+    :authentication  => :plain
+  }
+  
+  
 end
 
