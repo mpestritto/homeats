@@ -1,6 +1,7 @@
 .header_login {
-  color: white;
+  color: #666666;
   height: 23px;
+  margin-top:4px;
   text-align: right;
 }
 
@@ -15,9 +16,36 @@
 }
 
 .header_login a {
-  color: white;;
+  color: #3A3A3A;
   text-decoration: none;
 }
+
+.header_nav{
+    background-color: #fccf8d;
+    border-color: #fc7100;
+    border-width: 2px;
+    border-style:solid;
+    border-radius: 8px;
+    height: 30px;
+    margin-top: 15px;
+}
+
+.header_nav_item{
+  font-family: Georgia;
+  font-size: 17px;
+  padding-top: 5px;
+  text-align: center;
+}
+
+.header_nav_item a {
+  color: #5A5A5A;
+  text-decoration: none;
+}
+.header_nav_item a:hover {
+  color: #000000;
+}
+
+
 
 #div_flash{
   font-size: 12px;

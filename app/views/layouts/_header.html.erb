@@ -1,18 +1,26 @@
 
-<div class="grid12_8 prefix_4 header_login">
+<div class="grid12_7 prefix_5 header_login">
   <% if user_signed_in? %>
-    Signed in as <%= current_user.email %>. Not you?
-    <%= link_to "Logout", destroy_user_session_path %>
+    Signed in as <%= current_user.email %>.
+    <%= link_to "Not you?", destroy_user_session_path %>
   <% else %>
     <%= link_to "Login", new_user_session_path  %> | <%= link_to "Register", new_user_registration_path %>
   <% end %>
   <span>| <a href="mailto:team@saucychefs.com">Contact us</a></span>
 </div>
 <div class="clear"></div>
-<div class="header_whitespace"><%= link_to ( image_tag "logo.png" , :class=>'header_logo'), home_index_path %>
+<div class="grid12_4 alpha header_whitespace"><%= link_to ( image_tag "logo.png" , :class=>'header_logo'), root_path %></div>
+<div class="grid12_8 omega header_nav">
+    <div class="grid12_2 alpha header_nav_item"><%= link_to 'CHEFS', chefs_path %></div>
+    <div class="grid12_2 header_nav_item"><%= link_to 'LISTINGS', listings_path %></div>
+    <div class="grid12_2 header_nav_item"><%= link_to 'DISHES', chefs_path %></div>
+    <div class="grid12_2 omega header_nav_item"><%= link_to 'MORE?', chefs_path %></div>
+</div>
+<div class="clear"></div>
+
 <div id="div_flash">
   <div id="notice"><%= notice %></div>
   <div id="alert"><%= alert %></div>
 </div>
-</div>
+
 <div class="clear"></div>
