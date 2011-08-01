@@ -1,75 +1,70 @@
-<div id="Content">
-    <div class="grid12_12 alpha omega">
-        <div class="reg_site_logo reg_bg">
-           <%= image_tag "BetauserSignup/logo.png" , :class=>'reg_site_logo' %>
+
+<div class="grid12 prefix_3">
+       <%= image_tag "BetauserSignup/logo.png"  %>
+</div>
+<div class="clear"></div>
+
+
+<%= form_for(@beta_user) do |f| %>
+    <div class="grid12_12">
+            <div class="reg_site_block">
+                <% email_css_class = @beta_user.errors.include?(:email) ? "reg_email_box blockquote" : "reg_email_box blockquote" %>
+                <%= f.text_field :email, :class=>"#{email_css_class}" %>
+                <%= image_submit_tag("BetauserSignup/sign-up-btn.png",  :class=>'reg_btn') %>
+            </div>
+    </div>
+    
+    <div class="clear"></div>
+    <div class="grid12_12">
+        <div class="reg_private_beta_txt">
+            Sign up for private beta<br/><%= notice %>
         </div>
     </div>
-    <div class="clear"></div>
 
-    <%= form_for(@beta_user) do |f| %>
-    <div class="grid12_12 alpha omega reg_bg">
-       <div class="reg_site_block">
-          <% email_css_class = @beta_user.errors.include?(:email) ? "reg_email_box blockquote" : "reg_email_box blockquote" %>
-          <%= f.text_field :email, :class=>"#{email_css_class}" %>
-          <%= image_submit_tag("BetauserSignup/sign-up-btn.png",  :class=>'reg_btn') %>
-       </div>
-    </div>
-    <div class="clear"></div>
-    <div class="grid12_12 alpha omega reg_bg">
-       <div class="reg_private_beta_txt">
-            Sign up for private beta
-       </div>
-    </div>
+    
 
-    <div class="grid12_12 alpha omega reg_bg">
-       <% if @beta_user.errors.any? %>
+    <div class="clear"></div>
+    <% if @beta_user.errors.any? %>
+        <div class="grid12_12">
             <div id="error_explanation">
-              <h2><%= pluralize(@beta_user.errors.count, "error") %> </h2>
-
-              <ul>
-              <% @beta_user.errors.full_messages.each do |msg| %>
-                <li><%= msg %></li>
-              <% end %>
-              </ul>
+                <ul>
+                    <% @beta_user.errors.full_messages.each do |msg| %>
+                        <li><%= msg %></li>
+                    <% end %>
+                </ul>
             </div>
-        <% end %>
-    </div>
+        </div>
     <% end %>
+<% end %>
 
+<div class="clear"></div>
 
-
-    <div class="clear"></div>
-
-    <div class="grid12_12 alpha omega reg_bg reg_f_d_e_text_block">
-      <div class="grid12_4 reg_image_txt1">
-      <%= image_tag("BetauserSignup/txt1.png") %>
-      </div>
-      <div class="grid12_4 reg_image_txt2">
-      <%= image_tag("BetauserSignup/txt2.png") %>
-      </div>
-      <div class="grid12_4 reg_image_txt3">
-      <%= image_tag("BetauserSignup/txt3.png") %>
-      </div>
-    </div>
-    <div class="clear"></div>
-    <div class="grid12_12 alpha omega reg_bg">
-      <div class="grid12_4">
-      <%= image_tag("BetauserSignup/pic1.png") %>
-      </div>
-      <div class="grid12_4">
-      <%= image_tag("BetauserSignup/pic2.png") %>
-      </div>
-      <div class="grid12_4">
-      <%= image_tag("BetauserSignup/pic3.png") %>
-      </div>
-    </div>
-    <div class="clear"></div>
-
-    <div class="reg_top_graphic">
-      <%= image_tag "BetauserSignup/string.png" %>
-    </div>
+<div class="grid12_12 reg_f_d_e_text_block">
+  <div class="grid12_4 reg_image_txt1">
+  <%= image_tag("BetauserSignup/txt1.png") %>
+  </div>
+  <div class="grid12_4 reg_image_txt2">
+  <%= image_tag("BetauserSignup/txt2.png") %>
+  </div>
+  <div class="grid12_4 reg_image_txt3">
+  <%= image_tag("BetauserSignup/txt3.png") %>
+  </div>
 </div>
+<div class="clear"></div>
+<div class="grid12_12">
+  <div class="grid12_4">
+  <%= image_tag("BetauserSignup/pic1.png") %>
+  </div>
+  <div class="grid12_4">
+  <%= image_tag("BetauserSignup/pic2.png") %>
+  </div>
+  <div class="grid12_4">
+  <%= image_tag("BetauserSignup/pic3.png") %>
+  </div>
+</div>
+<div class="clear"></div>
 
-
-
+<div class="reg_top_graphic">
+  <%= image_tag "BetauserSignup/string.png" %>
+</div>
 
