@@ -1,0 +1,33 @@
+<div class="grid12_9">
+    
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>User:</b>
+  <%= @dish.user_id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @dish.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @dish.description %>
+</p>
+
+<p>
+  <b>Cost per dish:</b>
+  <%= @dish.cost_per_dish %>
+</p>
+
+<p>
+  <b>Is Available on Website?:</b>
+  <%= @dish.isactive %>
+</p>
+
+<%= link_to 'Edit', edit_chefs_dish_path %> |
+<%= link_to 'Back', chefs_dishes_path %>
+
+</div>

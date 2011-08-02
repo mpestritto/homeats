@@ -1,7 +1,9 @@
 <div class="grid12_3">
 <%= link_to "Basic Information", edit_user_registration_path %>
 <br/>
-<%= link_to "Chef Profile", chefs_profile_path(current_user.chefs_profile.id)%>    
+<%= link_to "My Profile", chefs_profile_path(current_user.chefs_profile.id)%>    
+<br/>
+<%= link_to "My Dishes", chefs_dishes_path %>    
 <br/>
 
 </div>

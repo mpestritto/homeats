@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110802120805) do
+ActiveRecord::Schema.define(:version => 20110802163622) do
 
   create_table "beta_users", :force => true do |t|
     t.string   "email"
@@ -32,6 +32,17 @@ ActiveRecord::Schema.define(:version => 20110802120805) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "user_id"
+  end
+
+  create_table "dishes", :force => true do |t|
+    t.integer  "user_id"
+    t.string   "name"
+    t.string   "description"
+    t.float    "cost_per_dish"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "isactive",      :default => false
+    t.boolean  "desd",          :default => false
   end
 
   create_table "users", :force => true do |t|

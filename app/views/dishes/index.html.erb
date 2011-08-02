@@ -1,0 +1,23 @@
+<h1>Listing dishes</h1>
+
+<table>
+  <tr>
+    <th>User</th>
+    <th>Name</th>
+    <th>Description</th>
+    <th>Cost per dish</th>
+    <th></th>
+  </tr>
+
+<% @dishes.each do |dish| %>
+  <tr>
+    <td><%= dish.user_id %></td>
+    <td><%= dish.name %></td>
+    <td><%= dish.description %></td>
+    <td><%= dish.cost_per_dish %></td>
+    <td><%= link_to 'Show', dish %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />

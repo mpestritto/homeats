@@ -1,23 +1,22 @@
 Homeeat::Application.routes.draw do
 
+
   devise_for :users 
 
   resources :beta_users, :only => [ :new, :create ]
-  resources :chefs_profiles, :only => [ :show, :new ,:edit, :update ]
   resources :home, :only => [ :index ]
   resources :chefs, :only => [ :index ]
   resources :listings, :only => [ :index ]
+  resources :dishes, :only => [ :index, :show ]
+  resources :chefs_dishes, :only => [ :index, :show, :new, :create, :edit, :update, :destroy ]
+  resources :chefs_profiles, :only => [ :show, :new ,:edit, :update ]
   
   root :to => "home#index"
   #root :to => "beta_users#new"
 
-  #resources :chefs, :only => [ :index ]
- # resources :listings, :only => [ :index ]
-  #resources :home, :only => [ :index ]
-  #resources :beta_users, :only => [ :new, :create ]
 
-  # The priority is based upon order of creation:
-  # first created -> highest priority.
+
+
 
   # Sample of regular route:
   #   match 'products/:id' => 'catalog#view'

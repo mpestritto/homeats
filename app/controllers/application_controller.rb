@@ -9,4 +9,10 @@ class ApplicationController < ActionController::Base
     end
   end
 
+  def ischef?
+    if current_user.account_type != 'chef'
+      redirect_to root_path
+    end    
+  end
+
 end

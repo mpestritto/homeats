@@ -1,0 +1,35 @@
+<% @dish.id ? @url_path=chefs_dish_path(@dish) : @url_path=chefs_dishes_path %>
+<%= 
+   form_for(@dish, :url => @url_path) do |f| %>
+  <% if @dish.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@dish.errors.count, "error") %> prohibited this dish from being saved:</h2>
+
+      <ul>
+      <% @dish.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  <%= f.hidden_field :user_id %>
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :cost_per_dish %><br />
+    <%= f.text_field :cost_per_dish %>
+  </div>
+  <div class="field">
+    <%= f.label :isactive %><br />
+    <%= f.check_box :isactive %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  user_id: 1
+  name: MyString
+  description: MyString
+  cost_per_dish: 1.5
+
+two:
+  user_id: 1
+  name: MyString
+  description: MyString
+  cost_per_dish: 1.5

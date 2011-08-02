@@ -1,5 +1,6 @@
 class User < ActiveRecord::Base
   has_one :chefs_profile
+  has_many :dishes
   
   # Include default devise modules. Others available are:
   # :token_authenticatable, :encryptable, :confirmable, :lockable, :timeoutable and :omniauthable
