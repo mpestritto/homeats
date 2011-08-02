@@ -14,7 +14,19 @@
     <div class="grid12_2 alpha header_nav_item"><%= link_to 'CHEFS', chefs_path %></div>
     <div class="grid12_2 header_nav_item"><%= link_to 'LISTINGS', listings_path %></div>
     <div class="grid12_2 header_nav_item"><%= link_to 'DISHES', chefs_path %></div>
-    <div class="grid12_2 omega header_nav_item"><%= link_to 'MORE?', chefs_path %></div>
+    <div class="grid12_2 omega header_nav_item"><%= link_to 'MY PROFILE', 
+       if current_user
+         if current_user.account_type == 'chef' 
+             if current_user.chefs_profile
+                chefs_profile_path(current_user.chefs_profile)
+             else
+                new_chefs_profile_path
+             end
+         end
+       else
+         new_user_session_path 
+       end %>
+     </div>
 </div>
 <div class="clear"></div>
 

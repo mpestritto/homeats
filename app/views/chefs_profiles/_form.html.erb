@@ -1,0 +1,33 @@
+<%= form_for(@chefs_profile) do |f| %>
+  <% if @chefs_profile.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@chefs_profile.errors.count, "error") %> prohibited this chefs_profile from being saved:</h2>
+
+      <ul>
+      <% @chefs_profile.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+  <div class="field">
+    <%= f.label :city %><br />
+    <%= f.text_field :city %>
+  </div>
+  <div class="field">
+    <%= f.label :state %><br />
+    <%= f.text_field :state %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

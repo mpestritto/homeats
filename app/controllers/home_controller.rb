@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   
   def index
-    @locations=[['Manhattan', 'man'], ['Brooklyn', 'brk'], ['Queens', 'que']]
+    @locations=[['New York City', 'nyc'], ['San Francisco', 'sfo'], ['Boston', 'bos']]
   end
   
 end

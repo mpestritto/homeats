@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @chefs_profile.title %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @chefs_profile.description %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @chefs_profile.city %>
+</p>
+
+<p>
+  <b>State:</b>
+  <%= @chefs_profile.state %>
+</p>
+
+
+<%= link_to 'Edit', edit_chefs_profile_path(@chefs_profile) %>
